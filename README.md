@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-fylo-landing-page-using-flexbox-and-css-grid-Krge9PRCB)
-- Live Site URL: [Add live site URL here](https://julfinch.github.io/Fylo-Dark-Theme-Landing-Page-Master/)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-fylo-landing-page-using-flexbox-and-css-grid-Krge9PRCB](https://www.frontendmentor.io/solutions/responsive-fylo-landing-page-using-flexbox-and-css-grid-Krge9PRCB)
+- Live Site URL: [https://julfinch.github.io/Fylo-Dark-Theme-Landing-Page-Master/](https://julfinch.github.io/Fylo-Dark-Theme-Landing-Page-Master/)
 
 ## My process
 
