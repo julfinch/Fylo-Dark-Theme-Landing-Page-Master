@@ -1,92 +1,115 @@
-# Frontend Mentor - Fylo dark theme landing page
+# Frontend Mentor - Fylo dark theme landing page solution
 
-![Design preview for the Fylo dark theme landing page challenge](./design/desktop-preview.jpg)
+This is a solution to the [Fylo dark theme landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-**To do this challenge you need a basic understanding of HTML and CSS.**
+## Overview
 
-## The challenge
+### The challenge
 
-Your challenge is to build out this landing page and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to: 
+Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![](./screenshot.jpg)
+![](./screenshot_1.jpg)
+![](./screenshot_2.jpg)
+![](./screenshot_3.jpg)
+![](./screenshot_4.jpg)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-fylo-landing-page-using-flexbox-and-css-grid-Krge9PRCB)
+- Live Site URL: [Add live site URL here](https://julfinch.github.io/Fylo-Dark-Theme-Landing-Page-Master/)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My process
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+1. Create the Header where the logo and the links will stay.
+2. Next is to create and Intro Section where we will put the Intro Illustration first and right after it is the Intro Comments and the Get Started button.
+3. I applied the bg-curvy illustration as background image in this section so that it will overlap its top part just below the Intro Illustration on mobile layout later on as shown in the design specification of this challenge (mobile-design under the folder named "design").
+4. In the Grid Section, I used CSS Grid to form the 2x2 layout where the features are shown.
+5. Next is the Productive Section where I created a wrapper for the 2 div boxes, the left one for the image and the right one for the paragraphs.
+6. For the Testimonial Section, I used the Flex property with a value of 1 so that the three testimonial cards will have the same layout. I created a wrapper for the 3 cards and I positioned the quote image at the top left of this box and to constrict its position just right the the top left corner of the first testimonial card whenever the layout changes to a smaller screen.
+7. Under the Footer Section, I created the "Early Access Card" and positioned it so that the upper half will protrude above the top border of the Footer.
+8. I finished the project by completing the details in the Footer where I used Flexbox.
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+### Built with
 
-## Building your project
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Javascript
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### What I learned
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+1. This is my first time using CSS Grid because I always use Flexbox to my projects for the mobile responsiveness layout. I applied it in the Grid Section, the one after the Intro, where I decided to give it a try since the layout is a 2x2 grid boxes and I know Grids are meant for this kind of arrangement.
 
-## Deploying your project
+2. In the Testimonial Section, to apply the same layout and size on three cards, I used for the first time the Flexbox property of flex with a value of 1 as shown in the code below:
+```css
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+```
+3. Learning and looking for a way for validating emails is what make me took longer to finish this project since I am trying to create a code in javascript that will do just what I wanted as a result. This coding challenge wants the email validation message to appear right below the input text of the form. For this to be achieved, I created a blank paragraph tag in the forms section with an ID "emailValidationMessage" and message should appear in it during the process after targeting it. 
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+```html
+<form name="form1" action="#" onload='document.form1.text1.focus()'>
+  <input type="text" id="email" name="text1" placeholder="email@example.com" required>
+  <input type="button" id="submit" value="Get Started For Free" onclick="ValidateEmail(document.form1.text1)">
+</form>
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+<p id="emailValidationMessage">
+</p>
+```
+I already provided a link below for this topic, feel free to check it. The code provided on it uses an alert that will popup after validating the email, something that is not what I wanted because I want the message to appear in the blank p tag instead. To solve this, I changed it and used HTML DOM where we target the blank p tag using getElementById and have the Javascript put our message on it. The resulting code is shown below: 
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+```js
+function ValidateEmail(inputText)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{
+document.getElementById("emailValidationMessage").innerHTML = "Success!";
+document.form1.text1.focus();
+return true;
+}
+else
+{
+document.getElementById("emailValidationMessage").innerHTML = "Please enter a valid email address";
+document.form1.text1.focus();
+return false;
+}
+} 
+```
 
-## Create a custom `README.md`
+### Continued development
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+I took this Junior Challenge with a Javascript because I wanted to solve JS-related problem right away and get my hands dirty with it because that is how I learn fast than just reading books about it. Javascript is relatively new to me because I only create static webpages before using HTML and CSS. Thanks to this project for this has sparked an enthusiasm in me to learn more about JS. Learning more about JS is what I currently working on.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+### Useful resources
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+- [HTML DOM](https://www.w3schools.com/js/js_htmldom_html.asp) - This helped me understand the concept of DOM which allows me to change the content of the blank paragraph tag in the forms section so that the messages after email validation will appear just right below the email input bar.
+- [Email Validation](https://www.w3resource.com/javascript/form/email-validation.php) - This is an amazing article which helped me understand the concept of validating an email by filtering the inputted text in the form using the correct email format. There are other articles out there with the same concept but I'd recommend this one since it has a proper instruction in applying the code.
 
-## Submitting your solution
+## Author
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+- Frontend Mentor - [@julfinch](https://www.frontendmentor.io/profile/julfinch)
+- Twitter - [@julfinch](https://www.twitter.com/julfinch)
