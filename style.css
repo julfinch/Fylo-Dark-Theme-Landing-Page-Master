@@ -42,7 +42,6 @@ html {
 #header ul li a {
     text-decoration: none;
     color: hsl(0, 0%, 100%);
-    
 }
 #header ul li a:hover,
 #header ul li a.active {
@@ -231,7 +230,7 @@ h4 {
     border-radius: 5px;
     padding: 2em 2em 2.5em;
     font-size: 0.9rem;
-    box-shadow: 10px 10px hsl(217, 28%, 15%);
+    box-shadow: 10px 10px 8px hsl(217, 28%, 15%);
 }
 .card-profile {
     display: flex;
