@@ -793,13 +793,13 @@ h4 {
         width: 18rem;
     }
     #email, #submit {
-        width: 14rem;
+        width: 13.5rem;
     }
     #emailValidationMessage {
         margin-left: 3rem;
     }
     .footer-info-item-5 {
         margin-top: 2rem;
-        margin-left: 5rem;
+        margin-left: 4.5rem;
     }
 }
