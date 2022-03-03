@@ -28,10 +28,6 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.png)
-![](./screenshot_1.png)
-![](./screenshot_2.png)
-![](./screenshot_3.png)
-![](./screenshot_4.png)
 
 ### Links
 
