@@ -559,7 +559,7 @@ h4 {
         flex-direction: row;
     }
 }
-@media only screen and (max-width: 390px) {
+@media screen and (max-width: 390px) {
     
     #header {
         padding: 1.4rem;
@@ -762,5 +762,44 @@ h4 {
         margin-top: 4.5rem;
         margin-left: 7rem;
         width: 7.5rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    
+    #email, #submit {
+        width: 16.5rem;
+    }
+    .footer-info-item-5  {
+        margin-left: 6.5rem;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    
+    #header ul {
+        width: 9rem;
+    }
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+    }
+    #grid-section p {
+        width: 19rem;
+        text-align: center;
+    }
+    #productive-section-left img{
+        width: 18rem;
+    }
+    #email, #submit {
+        width: 14rem;
+    }
+    #emailValidationMessage {
+        margin-left: 3rem;
+    }
+    .footer-info-item-5 {
+        margin-top: 2rem;
+        margin-left: 5rem;
     }
 }
