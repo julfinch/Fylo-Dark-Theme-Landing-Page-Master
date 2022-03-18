@@ -12,6 +12,7 @@ html {
     background-color: hsl(218, 28%, 13%);
     font-family: 'Open Sans', sans-serif;
     color: hsl(0, 0%, 100%);
+    scroll-behavior: smooth;
 }
 
 /*====== HEADER NAVIGATION ======*/
